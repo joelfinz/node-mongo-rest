@@ -1,0 +1,26 @@
+
+### LIST ALL SUBSCRIBERS
+GET http://localhost:3000/subscribers
+
+### GET A SUBSCRIBER
+GET http://localhost:3000/subscribers/5ee0fa18c96abd088425acb4
+
+### CREATE A NEW SUBSCRIBER
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+    "name":"New guy",
+    "subscriberToChannel":"Youtube"
+}
+
+### UPDATE A SUBSCRIBER
+PATCH http://localhost:3000/subscribers/5ee0fb95c96abd088425acb5
+Content-Type: application/json
+
+{
+    "name":"Epic guy",
+    "subscriberToChannel":"Facebook"
+}
+### DELETE A SUBSCRIBER
+DELETE http://localhost:3000/subscribers/5ee1005cb85d7a2f04baeed6
